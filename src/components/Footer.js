@@ -29,7 +29,7 @@ function Footer(props) {
         </li>
         <li className="mx-2">
           <a
-            href="https://jennmenji.github.io/react-portfolio/"
+            href="https://jennmenji.github.io/portfolio/"
             target="_blank"
             rel="noreferrer"
           >
