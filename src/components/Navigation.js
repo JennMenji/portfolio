@@ -11,7 +11,7 @@ function Navigation() {
           </Link>
         </li>
         <li className="mx-2">
-          <Link as={Link} to="/project">
+          <Link as={Link} to="/projects">
             Projects
           </Link>
         </li>
