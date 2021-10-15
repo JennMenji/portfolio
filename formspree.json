@@ -1,0 +1,16 @@
+{
+  "forms": {
+    "contactForm": {
+      "name": "Contact Form",
+      "actions": [{ "type": "email", "to": "jennifer.menjivar18@gmail.com" }],
+      "fields": {
+        "name": { "type": "text" },
+        "email": {
+          "type": "email",
+          "required": true
+        },
+        "message": { "type": "text", "required": true }
+      }
+    }
+  }
+}

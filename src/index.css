@@ -126,7 +126,11 @@ span[role="img"] {
 }
 
 form {
-  width: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 input {
@@ -156,10 +160,11 @@ nav li {
 }
 
 textarea {
-  width: 600px;
+  width: 100%;
   height: 120px;
   border: 3px solid #cccccc;
   padding: 5px;
+  margin-bottom: 15px;
 }
 
 .container {
@@ -319,6 +324,17 @@ a {
 
 .about-content {
   max-width: 55%;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.split {
+  max-width: 50%;
 }
 
 /* .about-content p {
