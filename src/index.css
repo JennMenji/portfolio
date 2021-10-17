@@ -306,12 +306,12 @@ a {
   padding: 0%;
 }
 .footer-icon {
-  width: 32px;
+  width: 42px;
   height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 15px;
+  margin-right: var(--spacing-two);
 }
 .about {
   display: flex;

@@ -1,15 +1,23 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import emailIcon from "../assets/icons/email.png";
 import githubIcon from "../assets/icons/github.png";
 import linkedinIcon from "../assets/icons/linkedin.png";
-import websiteIcon from "../assets/icons/website.png";
+import homeIcon from "../assets/icons/home.png";
 
 function Footer(props) {
   return (
     <footer>
       <ul className="footer">
-        <li className="mx-2">
+        <li>
+          <Link as={Link} to="/">
+            <img src={homeIcon} alt="Website Icon" className="footer-icon" />
+          </Link>
+          {/* <a href="https://jennmenji.github.io/portfolio/" rel="noreferrer">
+            
+          </a> */}
+        </li>
+        <li>
           <a
             href="https://www.linkedin.com/in/jennmenjivar/"
             target="_blank"
@@ -22,21 +30,12 @@ function Footer(props) {
             />
           </a>
         </li>
-        <li className="mx-2">
-          <a href="malito:jennifer.menjivar18@gmail.com" rel="noreferrer">
+        <li>
+          <a href="mailto:jennifer.menjivar18@gmail.com">
             <img src={emailIcon} alt="Email Icon" className="footer-icon" />
           </a>
         </li>
-        <li className="mx-2">
-          <a
-            href="https://jennmenji.github.io/portfolio/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={websiteIcon} alt="Website Icon" className="footer-icon" />
-          </a>
-        </li>
-        <li className="mx-2">
+        <li>
           <a
             href="https://github.com/JennMenji"
             target="_blank"
@@ -46,7 +45,6 @@ function Footer(props) {
           </a>
         </li>
       </ul>
-      <h6 className="footer">Thank you for visiting!</h6>
     </footer>
   );
 }
