@@ -23,7 +23,7 @@ function ContactForm() {
           style={{ width: "40%" }}
           alt="headshot"
         />
-        <h1>Contact Me</h1>
+        <h2>Contact Me</h2>
       </div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>

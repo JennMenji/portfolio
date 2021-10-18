@@ -1,4 +1,5 @@
 import React from "react";
+import projectPhotos from "../assets/project-images";
 // import { capitalizeFirstLetter } from "../assets/utils/helpers";
 // import Photolist from "./Photolist.js";
 
@@ -17,11 +18,11 @@ function Projects() {
     {
       id: 1,
       name: "Weather Dashboard",
-      skills: "commercial",
+      skills: "HTML, CSS, JavaScript, Materialize, Open Weather Map API",
       github: "https://github.com/JennMenji/Challenge6-Weather-Dashboard",
       deployed: "https://jennmenji.github.io/Challenge6-Weather-Dashboard/",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+        "A JavaScript application that uses a server side API to search and save any city's current and forecasted weather data.",
     },
     {
       id: 2,
@@ -37,28 +38,42 @@ function Projects() {
 
   return (
     <section>
+      <h2>Check out my work!</h2>
+      <p>
+        Feel free to send any feedback on my projects or repos by filling out
+        the form in my contact page!
+      </p>
       <div className="flex-row">
         {projects.map((project) => (
           <div>
-            <h4>{project.name}</h4>
-            <h5>{project.skills}</h5>
-            <p>{project.description}</p>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              id={project.id}
-            >
-              <button>GitHub Repository</button>
-            </a>
-            <a
-              href={project.deployed}
-              target="_blank"
-              rel="noreferrer"
-              id={project.id}
-            >
-              <button>Deployed Application</button>
-            </a>
+            <img
+              src={require(`../assets/screenshots/${project.id}.jpg`).default}
+              alt={project.name}
+              className="img-thumbnail mx-1"
+              // onClick={() => toggleModal(project, i)}
+              key={project.name}
+            />
+            <div>
+              <h4>{project.name}</h4>
+              <h5>{project.skills}</h5>
+              <p>{project.description}</p>
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                id={project.id}
+              >
+                <button>GitHub Repository</button>
+              </a>
+              <a
+                href={project.deployed}
+                target="_blank"
+                rel="noreferrer"
+                id={project.id}
+              >
+                <button>Deployed Application</button>
+              </a>
+            </div>
           </div>
         ))}
       </div>

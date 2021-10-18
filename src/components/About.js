@@ -14,7 +14,7 @@ const About = () => {
       </div>
 
       <div className="about-content">
-        <h1 id="about">Jenn Menjivar</h1>
+        <h2 id="about">Jenn Menjivar</h2>
         <h3>she/hers/her</h3>
         <p>
           Front End Web Developer leveraging Hospitality background to optimize
