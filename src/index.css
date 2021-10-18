@@ -339,15 +339,6 @@ a {
   max-width: 50%;
 }
 
-.resume {
-  width: 55%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-style: solid;
-  border-color: var(--secondary);
-}
-
 .project {
   display: flex;
   /* width: 100px; */
@@ -356,3 +347,49 @@ a {
 /* .about-content p {
   font-size: 12px;
 } */
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.resume {
+  display: block;
+  max-width: 200%;
+  height: auto;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-style: solid;
+  border-color: var(--secondary);
+}
+
+.resume-section {
+  height: 400px;
+  width: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0.15;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 200%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 1rem;
+  padding: 20px;
+  margin: 100% 0 0 0;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
