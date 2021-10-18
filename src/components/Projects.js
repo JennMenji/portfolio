@@ -7,11 +7,12 @@ function Projects() {
     {
       id: 0,
       name: "Castle Cottage or Cave",
-      skills: "commercial",
+      skills:
+        "JavaScript, MongoDB, Express, React, Node, Bootstrap, Apollo Server, React Router, Graph QL, and Heroku",
       github: "https://github.com/JennMenji/castle-cottage-or-cave",
       deployed: "https://damp-inlet-70422.herokuapp.com/",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+        "A MERN-stack application that searches for and saves rental property listings and realtor contacts by city, state, number of bedrooms and bathrooms as well as maximum price using the US Real Estate API",
     },
     {
       id: 1,
@@ -25,7 +26,8 @@ function Projects() {
     {
       id: 2,
       name: "Tech Blog",
-      skills: "commercial",
+      skills:
+        "JavaScript, Handlebars.js, CSS, Express.js, Express-Session, MySQL, Sequelize, and Heroku",
       github: "https://github.com/JennMenji/tech-blog",
       deployed: "https://tech-blog-1021.herokuapp.com",
       description:
@@ -39,14 +41,15 @@ function Projects() {
         {projects.map((project) => (
           <div>
             <h4>{project.name}</h4>
-            <h5>Technologies used: {project.skills}</h5>
+            <h5>{project.skills}</h5>
+            <p>{project.description}</p>
             <a
               href={project.github}
               target="_blank"
               rel="noreferrer"
               id={project.id}
             >
-              GitHub Repository
+              <button>GitHub Repository</button>
             </a>
             <a
               href={project.deployed}
@@ -54,9 +57,8 @@ function Projects() {
               rel="noreferrer"
               id={project.id}
             >
-              Deployed Application
+              <button>Deployed Application</button>
             </a>
-            <p>{project.description}</p>
           </div>
         ))}
       </div>

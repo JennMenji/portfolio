@@ -337,6 +337,14 @@ a {
   max-width: 50%;
 }
 
+.resume {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: solid;
+  border-color: var(--secondary);
+}
+
 /* .about-content p {
   font-size: 12px;
 } */

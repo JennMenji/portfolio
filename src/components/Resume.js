@@ -1,10 +1,10 @@
 import React from "react";
-import resumePhoto from "../assets/cover/cover-image.jpg";
+import resume from "../assets/cover/resume-screenshot.png";
 
 function Resume() {
   return (
     <div>
-      <img src={resumePhoto} alt="Resume Screenshot" className="resume"></img>
+      <img src={resume} alt="Resume Screenshot" className="resume"></img>
     </div>
   );
 }
