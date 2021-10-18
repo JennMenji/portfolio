@@ -1,5 +1,4 @@
 import React from "react";
-import projectPhotos from "../assets/project-images";
 // import { capitalizeFirstLetter } from "../assets/utils/helpers";
 // import Photolist from "./Photolist.js";
 
@@ -43,17 +42,16 @@ function Projects() {
         Feel free to send any feedback on my projects or repos by filling out
         the form in my contact page!
       </p>
-      <div className="flex-row">
+      <div>
         {projects.map((project) => (
-          <div>
+          <div className="project" key={project.id}>
             <img
-              src={require(`../assets/screenshots/${project.id}.jpg`).default}
+              src={require(`../assets/screenshots/${project.id}.png`).default}
               alt={project.name}
-              className="img-thumbnail mx-1"
+              className="project-screenshot mx-1"
               // onClick={() => toggleModal(project, i)}
-              key={project.name}
             />
-            <div>
+            <div className="project-content">
               <h4>{project.name}</h4>
               <h5>{project.skills}</h5>
               <p>{project.description}</p>

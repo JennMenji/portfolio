@@ -63,6 +63,7 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+  color: var(--tertiary);
 }
 
 h5 {
@@ -86,6 +87,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: var(--secondary-highlight);
 }
 
 header {
@@ -109,7 +111,7 @@ button {
 }
 
 button:hover {
-  opacity: 0.8;
+  background-color: var(--secondary-highlight);
 }
 
 button[disabled] {
@@ -239,10 +241,10 @@ textarea {
   text-align: center;
 }
 
-.img-thumbnail {
+.project-screenshot {
   width: auto;
-  height: 300px;
-  margin-bottom: 50px;
+  height: 175px;
+  margin: var(--spacing-one);
   cursor: pointer;
 }
 
@@ -338,11 +340,17 @@ a {
 }
 
 .resume {
-  width: 50%;
+  width: 55%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   border-style: solid;
   border-color: var(--secondary);
+}
+
+.project {
+  display: flex;
+  /* width: 100px; */
 }
 
 /* .about-content p {

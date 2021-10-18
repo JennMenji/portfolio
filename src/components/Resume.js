@@ -3,7 +3,7 @@ import resume from "../assets/cover/resume-screenshot.png";
 
 function Resume() {
   return (
-    <div>
+    <div className="flex-row">
       <img src={resume} alt="Resume Screenshot" className="resume"></img>
     </div>
   );
