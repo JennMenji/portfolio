@@ -5,22 +5,22 @@ function Navigation() {
   return (
     <nav>
       <ul className="flex-row">
-        <li className="mx-2">
+        <li className="mx-2 nav-text">
           <Link as={Link} to="/about">
             About Me
           </Link>
         </li>
-        <li className="mx-2">
+        <li className="mx-2 nav-text">
           <Link as={Link} to="/projects">
             Projects
           </Link>
         </li>
-        <li className="mx-2">
+        <li className="mx-2 nav-text">
           <Link as={Link} to="/resume">
             Resume
           </Link>
         </li>
-        <li className="mx-2">
+        <li className="mx-2 nav-text">
           <Link as={Link} to="/contact">
             Contact
           </Link>

@@ -86,7 +86,6 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
   color: var(--secondary-highlight);
 }
 
@@ -96,6 +95,7 @@ header {
 
 header a {
   color: var(--secondary);
+  font-size: 0.85rem;
 }
 
 button {
@@ -349,7 +349,7 @@ a {
 } */
 
 /* Container needed to position the overlay. Adjust the width as needed */
-.container {
+.resume-container {
   position: relative;
   width: 50%;
   max-width: 300px;
@@ -378,11 +378,10 @@ a {
   bottom: 0.15;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
+  color: var(--primary);
   width: 200%;
   transition: 0.5s ease;
   opacity: 0;
-  color: white;
   font-size: 1rem;
   padding: 20px;
   margin: 100% 0 0 0;
@@ -390,6 +389,10 @@ a {
 }
 
 /* When you mouse over the container, fade in the overlay title */
-.container:hover .overlay {
+.resume-container:hover .overlay {
   opacity: 1;
+}
+
+.overlay-link {
+  color: var(--primary);
 }
