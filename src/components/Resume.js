@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import resumeImg from "../assets/cover/resume-screenshot.png";
+import resumeImg from "../assets/cover/resume-image.png";
 import resume from "../assets/files/tech-resume-2021.pdf";
 
 function Resume() {

@@ -358,18 +358,16 @@ a {
 /* Make the image to responsive */
 .resume {
   display: block;
-  max-width: 200%;
+  max-width: 100%;
   height: auto;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   border-style: solid;
   border-color: var(--secondary);
 }
 
 .resume-section {
-  height: 400px;
   width: auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* The overlay effect - lays on top of the container and over the image */
@@ -379,12 +377,12 @@ a {
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: var(--primary);
-  width: 200%;
+  width: 100%;
   transition: 0.5s ease;
   opacity: 0;
   font-size: 1rem;
-  padding: 20px;
-  margin: 100% 0 0 0;
+  padding: 35px;
+  margin: 50% 0 0 0;
   text-align: center;
 }
 
