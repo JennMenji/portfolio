@@ -15,33 +15,38 @@ function ContactForm() {
   }
 
   return (
-    <section>
-      <div className="contact-header">
+    <section className="my-5">
+      <div className="page-header">
+        <h2>CONTACT ME</h2>
+      </div>
+      <div className="form-section">
         <img
           src={contactImg}
-          className="contactImg"
-          style={{ width: "40%" }}
-          alt="headshot"
+          className="contact-img"
+          style={{ width: "35%" }}
+          alt="Envelope Line Art"
         />
-        <h2>Contact Me</h2>
       </div>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name</label>
-        <input id="name" type="name" name="name" />
-        <label htmlFor="email">Email Address</label>
-        <input id="email" type="email" name="email" />
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <label htmlFor="message">Message</label>
-        <textarea id="message" name="message" />
-        <ValidationError
-          prefix="Message"
-          field="message"
-          errors={state.errors}
-        />
-        <button type="submit" disabled={state.submitting}>
-          Submit
-        </button>
-      </form>
+
+      <div className="form-section">
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="name">Name</label>
+          <input id="name" type="name" name="name" />
+          <label htmlFor="email">Email Address</label>
+          <input id="email" type="email" name="email" />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+          <button type="submit" disabled={state.submitting}>
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
   );
 }

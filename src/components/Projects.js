@@ -36,24 +36,25 @@ function Projects() {
   ];
 
   return (
-    <section>
-      <h2>Check out my work!</h2>
-      <p>
-        Feel free to send any feedback on my projects or repos by filling out
-        the form in my contact page!
-      </p>
+    <section className="my-5">
+      <div className="page-header">
+        <h2>CHECK OUT MY WORK</h2>
+        <h6>leave feedback on my contact page</h6>
+      </div>
+
       <div>
         {projects.map((project) => (
           <div className="project" key={project.id}>
-            <img
-              src={require(`../assets/screenshots/${project.id}.png`).default}
-              alt={project.name}
-              className="project-screenshot mx-1"
-              // onClick={() => toggleModal(project, i)}
-            />
-            <div className="project-content">
+            <div className="content-img">
+              <img
+                src={require(`../assets/screenshots/${project.id}.png`).default}
+                alt={project.name}
+                // onClick={() => toggleModal(project, i)}
+              />
+            </div>
+            <div className="content-info">
               <h4>{project.name}</h4>
-              <h5>{project.skills}</h5>
+              <h6>{project.skills}</h6>
               <p>{project.description}</p>
               <a
                 href={project.github}
