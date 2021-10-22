@@ -195,10 +195,6 @@ textarea {
   justify-content: space-between;
 }
 
-.flex-end {
-  justify-content: flex-end;
-}
-
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
@@ -373,18 +369,16 @@ a {
 }
 
 /* Container needed to position the overlay. Adjust the width as needed */
-.resume-container {
-  justify-content: center;
-  align-items: center;
+.overlay-container {
   position: relative;
   width: 50%;
   max-width: 300px;
 }
 
 /* Make the image to responsive */
-.resume {
+.image {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-style: solid;
   border-color: var(--secondary);
@@ -393,24 +387,20 @@ a {
 /* The overlay effect - lays on top of the container and over the image */
 .overlay {
   position: absolute;
-  bottom: 0.15;
+  bottom: 40%;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: var(--primary);
+  color: var(--primary-highlight);
   width: 100%;
   transition: 0.5s ease;
   opacity: 0;
-  font-size: 1rem;
-  padding: 35px;
-  margin: 50% 0 0 0;
+  color: var(--primary-highlight);
+  font-size: 20px;
+  padding: 20px;
   text-align: center;
 }
 
 /* When you mouse over the container, fade in the overlay title */
-.resume-container:hover .overlay {
+.overlay-container:hover .overlay {
   opacity: 1;
-}
-
-.overlay-link {
-  color: var(--primary);
 }

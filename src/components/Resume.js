@@ -10,20 +10,15 @@ function Resume() {
         <h2>RESUME</h2>
         <h6>click on the link below to download my full resume</h6>
       </div>
-      <div className="">
-        <img
-          src={resumeImg}
-          alt="Resume Screenshot"
-          className="resume header-img"
-        ></img>
-
-        <div className="overlay">
+      <div className="flex-row">
+        <div className="overlay-container">
+          <img src={resumeImg} alt="Resume Screenshot" className="image"></img>
           <a
             href={resume}
             target="_blank"
             rel="noreferrer"
             download="jenn-menjivar-resume"
-            className="overlay-link"
+            className="overlay"
           >
             DOWNLOAD
           </a>

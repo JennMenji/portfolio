@@ -19,7 +19,7 @@ function ContactForm() {
       <div className="page-header">
         <h2>CONTACT ME</h2>
       </div>
-      <div className="form-section">
+      <div className="flex-row">
         <img
           src={contactImg}
           className="contact-img"
@@ -28,7 +28,7 @@ function ContactForm() {
         />
       </div>
 
-      <div className="form-section">
+      <div className="flex-row">
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input id="name" type="name" name="name" />
