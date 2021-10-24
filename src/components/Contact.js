@@ -23,7 +23,7 @@ function ContactForm() {
         <img
           src={contactImg}
           className="contact-img"
-          style={{ width: "35%" }}
+          // style={{ width: "45%" }}
           alt="Envelope Line Art"
         />
       </div>

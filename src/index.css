@@ -91,6 +91,19 @@ a:hover {
 
 header {
   background: var(--primary);
+  padding: 10rempx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 100%;
+  z-index: 9999;
 }
 
 header a {
@@ -175,6 +188,9 @@ textarea {
   margin-bottom: 15px;
 }
 
+.contact-img {
+  width: 45%;
+}
 /* CONTACT STYLING END */
 
 .container {
@@ -448,6 +464,10 @@ a {
     margin-top: 2px;
     margin-bottom: 8px;
   }
+
+  .contact-img {
+    width: 65%;
+  }
 }
 
 /* media query for tablets and smaller */
@@ -470,12 +490,24 @@ a {
     margin-top: 2px;
     margin-bottom: 8px;
   }
+
+  .contact-img {
+    width: 55%;
+  }
 }
 
 /* media query for mobile phones and smaller */
 @media screen and (max-width: 575px) {
   form {
     width: 100%;
+  }
+  header a {
+    font-size: 0.8rem;
+  }
+
+  .nav-text {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
   }
 
   .overlay-container {
@@ -511,6 +543,10 @@ a {
     width: 100%;
     margin-top: 2px;
     margin-bottom: 8px;
+  }
+
+  .contact-img {
+    width: 75%;
   }
 }
 /* media query end */
