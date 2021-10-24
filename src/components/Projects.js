@@ -44,11 +44,12 @@ function Projects() {
 
       <div>
         {projects.map((project) => (
-          <div className="project" key={project.id}>
+          <div className="flex" key={project.id}>
             <div className="content-img">
               <img
                 src={require(`../assets/screenshots/${project.id}.png`).default}
                 alt={project.name}
+                className="border"
                 // onClick={() => toggleModal(project, i)}
               />
             </div>

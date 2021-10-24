@@ -8,8 +8,11 @@ const About = () => {
         <h2 id="about">JENN MENJIVAR</h2>
         <h6>she/hers/her</h6>
       </div>
-      <div className="page-content">
-        <img src={headshot} className="content-img" alt="headshot" />
+      <div className="flex-row">
+        <div className="content-img">
+          <img src={headshot} className="border" alt="headshot" />
+        </div>
+
         <div className="content-info">
           <p>
             I am Front End Web Developer leveraging Hospitality background to
@@ -19,8 +22,7 @@ const About = () => {
             Florida, with skills such as CSS, JavaScript, Express, React.js, and
             responsive mobile web design.
           </p>
-
-          <p>
+          <p className="my-1">
             Known for being research-focused and leveraging knowledge to easily
             adapt to different and fast-changing environments. Developed
             technical skills by learning both Front and Back-end technologies
@@ -29,7 +31,6 @@ const About = () => {
             project is to utilize my analytical and creative skills to create
             modern, functional, and visually appealing applications.
           </p>
-
           <p>
             As a meticulous problem solver and natural team player, I look
             forward to collaborating with a team where I can identify errors,

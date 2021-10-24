@@ -1,3 +1,4 @@
+/* GENERAL STYLING START  */
 main {
   margin: 0 auto;
   /* max-width: 90%; */
@@ -71,16 +72,11 @@ h5 {
 
 h6 {
   font-size: 1rem;
-  /* color: var(--secondary-highlight); */
 }
 
 p {
   font-size: 0.75rem;
   margin: 0;
-}
-
-.tiny {
-  font-size: 0.5rem;
 }
 
 a {
@@ -99,7 +95,7 @@ header {
 
 header a {
   color: var(--secondary);
-  font-size: 0.85rem;
+  font-size: 1.05rem;
 }
 
 button {
@@ -130,7 +126,21 @@ img {
 span[role="img"] {
   cursor: default;
 }
+/* GENERAL STYLING END  */
 
+li {
+  list-style: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+/* CONTACT STYLING START */
 form {
   width: 50%;
   display: flex;
@@ -157,18 +167,6 @@ input:focus {
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
-li {
-  list-style: none;
-}
-
-nav a:hover {
-  text-decoration: none;
-}
-
-nav li {
-  cursor: pointer;
-}
-
 textarea {
   width: 100%;
   height: 120px;
@@ -177,11 +175,18 @@ textarea {
   margin-bottom: 15px;
 }
 
+/* CONTACT STYLING END */
+
 .container {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-row {
@@ -193,6 +198,12 @@ textarea {
 
 .space-between {
   justify-content: space-between;
+}
+
+.border {
+  border-style: solid;
+  border-color: var(--secondary);
+  border-radius: inherit;
 }
 
 .mx-1 {
@@ -304,21 +315,20 @@ a {
 
 .page-content {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
 }
 
 .content-img {
   width: 35%;
-  height: fit-content;
-  border-style: solid;
-  border-color: var(--secondary);
+  height: auto;
+
   margin: 0 0.5rem 0.5rem 0;
 }
 
 .content-info {
-  width: 65%;
+  width: 64%;
+  margin-bottom: 0.35rem;
 }
 
 /* end */
@@ -340,11 +350,6 @@ a {
   margin-right: var(--spacing-two);
 }
 
-/* .about-content {
-  max-width: 55%;
-  justify-content: inherit;
-} */
-
 .contact-header {
   display: flex;
   flex-direction: column;
@@ -352,27 +357,12 @@ a {
   align-items: center;
 }
 
-.split {
-  max-width: 50%;
-}
-
-.project {
-  display: flex;
-  /* width: 100px; */
-}
-
-.project-screenshot {
-  /* width: 100%; */
-  /* height: 175px; */
-  margin: var(--spacing-one);
-  cursor: pointer;
-}
-
+/* OVERLAY STYLING START  */
 /* Container needed to position the overlay. Adjust the width as needed */
 .overlay-container {
   position: relative;
   width: 50%;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 /* Make the image to responsive */
@@ -395,7 +385,7 @@ a {
   transition: 0.5s ease;
   opacity: 0;
   color: var(--primary-highlight);
-  font-size: 20px;
+  font-size: 1.5rem;
   padding: 20px;
   text-align: center;
 }
@@ -404,3 +394,123 @@ a {
 .overlay-container:hover .overlay {
   opacity: 1;
 }
+/* OVERLAY STYLING END  */
+
+/* MEDIA QUEIRES START */
+@media screen and (max-width: 1024px) {
+  form {
+    width: 60%;
+  }
+
+  .content-img {
+    width: 40%;
+    /* height: 90%; */
+  }
+
+  .content-info {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  form {
+    width: 75%;
+  }
+
+  .overlay-container {
+    width: 80%;
+  }
+
+  .flex {
+    justify-content: center;
+  }
+
+  .content-img {
+    width: 75%;
+    /* height: 90%; */
+    margin-top: var(--spacing-two);
+  }
+
+  .content-info {
+    width: 100%;
+    flex-direction: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content-info h6,
+  p {
+    text-align: left;
+  }
+
+  button {
+    width: 30%;
+    margin-top: 2px;
+    margin-bottom: 8px;
+  }
+}
+
+/* media query for tablets and smaller */
+@media screen and (max-width: 768px) {
+  .overlay-container {
+    width: 90%;
+  }
+
+  .page-header {
+    margin-bottom: var(--spacing-two);
+  }
+
+  .content-info h6,
+  p {
+    text-align: center;
+  }
+
+  button {
+    width: 30%;
+    margin-top: 2px;
+    margin-bottom: 8px;
+  }
+}
+
+/* media query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+  form {
+    width: 100%;
+  }
+
+  .overlay-container {
+    width: 100%;
+  }
+
+  .page-header {
+    margin-bottom: var(--spacing-two);
+  }
+  .page-header h6 {
+    text-align: center;
+  }
+
+  .content-img {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .content-info {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content-info p,
+  h6 {
+    text-align: justify;
+    margin-bottom: 0.35rem;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 8px;
+  }
+}
+/* media query end */

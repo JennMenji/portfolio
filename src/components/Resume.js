@@ -12,7 +12,12 @@ function Resume() {
       </div>
       <div className="flex-row">
         <div className="overlay-container">
-          <img src={resumeImg} alt="Resume Screenshot" className="image"></img>
+          <img
+            src={resumeImg}
+            alt="Resume Screenshot"
+            className="image"
+            className="border"
+          ></img>
           <a
             href={resume}
             target="_blank"
